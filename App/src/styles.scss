@@ -12,33 +12,46 @@
 // Define the palettes for your theme using the Material Design palettes available in palette.scss
 // (imported above). For each palette, you can optionally specify a default, lighter, and darker
 // hue. Available color palettes: https://material.io/design/color/
-$CodeSwapApp-primary: mat.define-palette(mat.$grey-palette, 900);
-$CodeSwapApp-accent: mat.define-palette(mat.$light-green-palette, A200, A100, A400);
 
+//Dark pallete
+$CodeSwapApp-primary-dark: mat.define-palette(mat.$blue-grey-palette, 900);
+$CodeSwapApp-accent-dark: mat.define-palette(mat.$light-green-palette, A200, A100, A400);
 // The warn palette is optional (defaults to red).
-$CodeSwapApp-warn: mat.define-palette(mat.$red-palette);
+$CodeSwapApp-warn-dark: mat.define-palette(mat.$red-palette);
+
+//Ligth pallete
+$CodeSwapApp-primary-light: mat.define-palette(mat.$blue-grey-palette, 50);
+$CodeSwapApp-accent-light: mat.define-palette(mat.$light-green-palette, A200, A100, A400);
+// The warn palette is optional (defaults to red).
+$CodeSwapApp-warn-light: mat.define-palette(mat.$red-palette);
 
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$CodeSwapApp-theme: mat.define-dark-theme((
+$CodeSwapApp-theme-dark: mat.define-dark-theme((
   color: (
-    primary: $CodeSwapApp-primary,
-    accent: $CodeSwapApp-accent,
-    warn: $CodeSwapApp-warn,
+    primary: $CodeSwapApp-primary-dark,
+    accent: $CodeSwapApp-accent-dark,
+    warn: $CodeSwapApp-warn-dark
   )
 ));
+
 // Create the theme object. A theme consists of configurations for individual
 // theming systems such as "color" or "typography".
-$CodeSwapApp-theme: mat.define-light-theme((
+$CodeSwapApp-theme-ligth: mat.define-light-theme((
   color: (
-    primary: $CodeSwapApp-primary,
-    accent: $CodeSwapApp-accent,
-    warn: $CodeSwapApp-warn,
+    primary: $CodeSwapApp-primary-light,
+    accent: $CodeSwapApp-accent-light,
+    warn: $CodeSwapApp-warn-light,
   )
 ));
 
 // Include theme styles for core and each component used in your app.
 // Alternatively, you can import and @include the theme mixins for each component
 // that you are using.
-@include mat.all-component-themes($CodeSwapApp-theme);
+@include mat.all-component-themes($CodeSwapApp-theme-dark);
+// @include mat.all-component-themes($CodeSwapApp-theme-ligth);
 
+
+html, body { height: 100%; }
+* { margin: 0;}
+body { margin: 1000; font-family: Roboto, "Helvetica Neue", sans-serif;}
