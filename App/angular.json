@@ -93,9 +93,12 @@
               "src/assets"
             ],
             "styles": [
+              "./assets/styles/prism-a11y-dark.scss",
               "src/styles.scss"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/prismjs/prism.js"
+            ]
           }
         }
       }
