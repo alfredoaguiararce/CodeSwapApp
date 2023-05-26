@@ -8,13 +8,15 @@ import { MaterialModule } from './modules/material/material.module';
 import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MaincontainerComponent } from './components/maincontainer/maincontainer.component';
 import { CardcodeComponent } from './components/cardcode/cardcode.component';
+import { SyntaxHighlightDirective } from './directives/syntax-highlight.directive';
 
 @NgModule({
   declarations: [
     AppComponent,
     ToolbarComponent,
     MaincontainerComponent,
-    CardcodeComponent
+    CardcodeComponent,
+    SyntaxHighlightDirective
   ],
   imports: [
     BrowserModule,

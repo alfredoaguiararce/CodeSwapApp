@@ -3,7 +3,6 @@
     margin:16px auto;
     width: 100%;
     max-width: 800px;
-    min-height: 300px;
     display: block;
     
   }
@@ -23,7 +22,20 @@
   }
 
   .cards-footer {
-    position: absolute;
+    position: relative;
     width: 100%;
     bottom: 0;
+  }
+
+  .code-view{
+    margin: 0;
+    position: relative;
+    width:auto;
+    bottom: 0;
+  }
+
+  .chips-info{
+    margin: 8px 0;
+    position: relative;
+    width:auto;
   }
