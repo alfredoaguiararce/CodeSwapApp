@@ -13,6 +13,9 @@ import {MatDividerModule} from '@angular/material/divider';
 import {MatFormFieldModule} from '@angular/material/form-field';
 import {FormsModule} from '@angular/forms';
 import {MatChipsModule} from '@angular/material/chips';
+import {MatSelectModule} from '@angular/material/select';
+import {MatGridListModule} from '@angular/material/grid-list';
+import {MatTooltipModule} from '@angular/material/tooltip';
 
 @NgModule({
   declarations: [
@@ -31,7 +34,10 @@ import {MatChipsModule} from '@angular/material/chips';
     MatDividerModule,
     MatFormFieldModule,
     FormsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSelectModule,
+    MatGridListModule,
+    MatTooltipModule
   ],
   exports: [
     MatDialogModule,
@@ -47,7 +53,10 @@ import {MatChipsModule} from '@angular/material/chips';
     MatDividerModule,
     MatFormFieldModule,
     FormsModule,
-    MatChipsModule
+    MatChipsModule,
+    MatSelectModule,
+    MatGridListModule,
+    MatTooltipModule
   ]
 })
 export class MaterialModule { }

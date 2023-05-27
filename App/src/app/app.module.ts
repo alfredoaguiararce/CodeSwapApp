@@ -9,6 +9,7 @@ import { ToolbarComponent } from './components/toolbar/toolbar.component';
 import { MaincontainerComponent } from './components/maincontainer/maincontainer.component';
 import { CardcodeComponent } from './components/cardcode/cardcode.component';
 import { SyntaxHighlightDirective } from './directives/syntax-highlight.directive';
+import { HerocontainerComponent } from './components/herocontainer/herocontainer.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { SyntaxHighlightDirective } from './directives/syntax-highlight.directiv
     ToolbarComponent,
     MaincontainerComponent,
     CardcodeComponent,
-    SyntaxHighlightDirective
+    SyntaxHighlightDirective,
+    HerocontainerComponent
   ],
   imports: [
     BrowserModule,
